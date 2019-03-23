@@ -1,0 +1,29 @@
+// GetPath.idl : GetPath.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(GetPath.tlb)。
+
+[ uuid(81B48893-F3BB-4B17-B517-4A08F64FE32F), version(1.0) ]
+library GetPath
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CGetPathDoc 的主调度接口
+	
+	[ uuid(30256D0E-AFEE-4389-9AF8-1AD85B590F6B) ]
+	dispinterface IGetPath
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CGetPathDoc 的类信息
+	
+	[ uuid(4F4D3B78-E2E9-45D2-987B-8C0FEEEDDDF9) ]
+	coclass GetPath
+	{
+		[default] dispinterface IGetPath;
+	};
+};

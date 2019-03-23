@@ -1,0 +1,17 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则以下条目将
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\GetPath.Application = GetPath Application
+
+
+HKEY_CLASSES_ROOT\GetPath.Application\CLSID = {4F4D3B78-E2E9-45D2-987B-8C0FEEEDDDF9}
+
+HKEY_CLASSES_ROOT\CLSID\{4F4D3B78-E2E9-45D2-987B-8C0FEEEDDDF9} = GetPath Application
+HKEY_CLASSES_ROOT\CLSID\{4F4D3B78-E2E9-45D2-987B-8C0FEEEDDDF9}\ProgId = GetPath.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{4F4D3B78-E2E9-45D2-987B-8C0FEEEDDDF9}\LocalServer32 = GetPath.EXE
